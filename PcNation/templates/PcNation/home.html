@@ -1,0 +1,46 @@
+{% extends 'PcNation/base.html' %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+
+{% block body %} 
+
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container">
+      <div class="intro-text">
+        <div class="intro-lead-in" style="-webkit-text-stroke: 1px black;">Are You Ready!!!</div>
+        <div class="intro-heading text-uppercase" style="-webkit-text-stroke: 2px black;">To Build Your Own Custom PC</div>
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{% url 'services' %}" style="background-color:#D22B2B;">Tell Me More</a>
+      </div>
+    </div>
+  </header>
+
+    <!-- Clients -->
+    <section class="py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-sm-6">
+              <a href="https://www.razer.com/">
+                <img class="img-fluid d-block mx-auto" src="{% static 'PcNation/img/logos/razer.png' %}" alt="">
+              </a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <a href="https://www.nvidia.com/en-us/">
+                <img class="img-fluid d-block mx-auto" src="{% static 'PcNation/img/logos/nvidia.png' %}" alt="">
+              </a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <a href="https://www.amd.com/en">
+                <img class="img-fluid d-block mx-auto" src="{% static 'PcNation/img/logos/amd.png' %}" alt="">
+              </a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <a href="https://www.asus.com/in/">
+                <img class="img-fluid d-block mx-auto" src="{% static 'PcNation/img/logos/asus.png' %}" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+    </section>
+
+{% endblock body %}

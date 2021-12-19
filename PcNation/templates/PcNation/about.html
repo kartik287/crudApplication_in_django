@@ -1,0 +1,85 @@
+{% extends 'PcNation/base.html' %}
+{% load static %}
+{% block title %}About{% endblock title %}
+
+{% block body %} 
+
+<!-- About -->
+<section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase" style="color: #D22B2B;">Customer's Feedback</h2>
+          <h3 class="section-subheading text-muted">Positive messages from our community.</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <ul class="timeline">
+            <li>
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="{% static 'PcNation/img/about/1.jpg' %}" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 style="color: #D22B2B;">"Very pleased with the cooling... I don't feel any heat returning"</h4>
+                </div>
+                
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="{% static 'PcNation/img/about/2.jpg' %}" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 style="color: #D22B2B;">"Awesome Processor... Makes PC smooth & fast"</h4>
+                  <h4 class="subheading"></h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted"></p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="{% static 'PcNation/img/about/3.jpg' %}" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4></h4>
+                  <h4 class="subheading" style="color: #D22B2B;">"Amazing Gaming CPU.... Great Experience"</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted"></p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="{% static 'PcNation/img/about/4.jpg' %}" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 style="color: #D22B2B;">"4K Gaming Monitor... All new experience"</h4>
+                  <h4 class="subheading"></h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted"></p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-image" style="background-color: #D22B2B;">
+                <h4>Let's
+                  <br>Get
+                  <br>Started!</h4>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+{% endblock body %}
